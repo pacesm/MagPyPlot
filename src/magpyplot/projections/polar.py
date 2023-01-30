@@ -92,7 +92,6 @@ class PolarTransform(mtransforms.Transform):
         return np.column_stack([r * np.cos(theta), r * np.sin(theta)])
 
     def transform_path_non_affine(self, path):
-        print(path)
         # docstring inherited
         if not len(path) or path._interpolation_steps == 1:
             return Path(self.transform_non_affine(path.vertices), path.codes)
