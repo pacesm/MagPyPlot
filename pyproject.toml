@@ -16,14 +16,13 @@ maintainers = [
 license = { file = "LICENSE" }
 description = "Python Matplotlib extension for ploting geomagnetic field."
 readme = "README.md"
-requires-python = ">=3.6"
+requires-python = ">=3.7"
 classifiers = [
     "License :: OSI Approved :: MIT License",
     "Intended Audience :: Education",
     "Operating System :: OS Independent",
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.6",
     "Programming Language :: Python :: 3.7",
     "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
@@ -33,7 +32,7 @@ classifiers = [
 ]
 dynamic = ["version"]
 dependencies = [
-    "matplotlib >=3.3,<=3.7",
+    "matplotlib >=3.5,<=3.7",
 ]
 [project.optional-dependencies]
 test = []
