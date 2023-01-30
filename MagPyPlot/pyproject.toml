@@ -1,0 +1,41 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project.urls]
+source = "https://github.com/pacesm/MagPyPlot"
+
+[project]
+name = "magpyplot"
+authors = [
+    { name = "Martin Paces", email = "martin.paces@eox.at" },
+]
+maintainers = [
+    { name = "Martin Paces", email = "martin.paces@eox.at" },
+]
+license = { file = "LICENSE" }
+description = "Python Matplotlib extension for ploting geomagnetic field."
+readme = "README.rst"
+requires-python = ">=3.6"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Intended Audience :: Education",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Development Status :: 3 - Alpha",
+]
+dynamic = ["version"]
+dependencies = [
+    "matplotlib >=3.3,<=3.7",
+]
+[project.optional-dependencies]
+test = []
+dev = []
+docs = []
