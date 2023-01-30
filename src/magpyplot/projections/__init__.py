@@ -50,7 +50,6 @@ class PolarAxesMLT(PolarAxes):
             (-6, r_origin), (-6, r_max), (6, r_max), (6, r_origin),
         ], dtype="float64")
         # set _interpolation_steps > 1 to draw an arch
-        print(vertices)
         return self.add_patch(PathPatch(
             Path(vertices, _interpolation_steps=2), color=color, **kwargs))
 
